@@ -4,7 +4,7 @@ function hex2bin(hex){
 
 function isfat(car) {
 	// let hash = Math.abs(car.hashCode()).toString(2);
-	if (car == "Volvo C30" || car.contains("Beringer"))
+	if (car == "Volvo C30" || car.includes("Beringer"))
 		return false
 	let hash = hex2bin(md5(car));
 	console.log(hash);
